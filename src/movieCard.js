@@ -9,8 +9,8 @@ export default function MovieCard({movie}){
                 />
             <div className="card--content">
             <h3 className="card--title">{movie.title}</h3>
-            <p><small>RELEASE DATE: {movie.release_date}</small></p>
-            <p><small>RATING: {movie.vote_average}</small></p>
+            <p>RELEASE DATE: {movie.release_date}</p>
+            <p>RATING: <span id="rating" style={{color: movie.vote_average < 6 ? 'red' : 'green'}}>{movie.vote_average === 0 ? 'N/A' : movie.vote_average}</span></p>
             <p className="card--desc">{movie.overview}</p>
             </div>
 

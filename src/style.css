@@ -4,6 +4,11 @@ html {
 
 * {
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input:focus, button:focus {
+    outline: none;
 }
 
 body {
@@ -29,17 +34,22 @@ small {
 
 .title {
     font-size: 4.4rem;
-    text-align: center
+    text-align: center;
+    margin-top: 2.5em;
 }
 
 .form {
     display:grid;
+    margin: 7em auto 0 auto;
+    max-width: 600px;
+
 }
 
 .label {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 0.2rem;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .input {
@@ -52,7 +62,7 @@ small {
 }
 
 .button {
-    background-color: rgba(0,0,0,0.75);
+    background-color: #97583b;
     color: white;
     padding: 1rem 2rem;
     border: 1px solid rgba(0,0,0,0.75);
@@ -63,7 +73,13 @@ small {
 }
 
 .button:hover {
-    background-color: rgba(0,0,0,0.85);
+    background-color: #79381a;
+}
+
+.card--desc {
+    background-color: #f1f1f1;
+    padding: 2em;
+    border-radius: 3px;
 }
 
 @media (min-width:786px){
@@ -79,7 +95,7 @@ small {
 }
 
 .card-list {
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 .card {
